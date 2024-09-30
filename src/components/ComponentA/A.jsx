@@ -9,15 +9,19 @@ function A() {
     setNumber((number) => number + 1);
   };
 
-  return (
-    <div className='wrapper_A'>
-      <p>Counter: {number}</p>
-      <div className='buttons'>
-        <button onClick={increment}>Click A</button>
+  const incrementTwo = () => {
+    setNumber((prevNumber) => prevNumber + 2);
+  };
 
-        <B increment={increment} />
+  return (
+      <div className='wrapper_A'>
+        <p>Counter: {number}</p>
+        <div className='buttons'>
+          <button onClick={increment}>Click A</button>
+
+          <B increment={increment} incrementTwo={incrementTwo} />
+        </div>
       </div>
-    </div>
   );
 }
 

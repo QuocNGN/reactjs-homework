@@ -2,12 +2,14 @@
     width: 400px;
     height: 300px;
     // border: 1px solid #2cccff;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     // align-items: center;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    background-color: #fff;
 }
 p {
     font-size: 45px;
@@ -15,8 +17,10 @@ p {
 }
 .buttons {
     display: flex;
+    flex-direction: column;
     /* align-items: center; */
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 10px
 }
 
 button {
@@ -29,7 +33,7 @@ button {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
     transition: tapBtn ease-in 0.1s;
     &:first-child {
-        background-color: #2cccff;
+        background-color: #43aed2;
     }
     &:last-child {
         background-color: #FF6651;
@@ -41,3 +45,7 @@ button {
     }
 }
 
+.buttons_B {
+    display: flex;
+    justify-content: space-between;
+}
